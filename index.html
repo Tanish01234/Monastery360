@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monastery360 – Explore Sikkim's Monasteries | Government of Sikkim</title>
+    <meta name="description" content="Official tourism website for exploring Sikkim's monasteries with virtual 360° tours, booking packages, and cultural experiences.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/sk-logo-lg.png" alt="Government of Sikkim Logo" class="gov-logo">
+                    <div class="site-title">
+                        <h1>Monastery360</h1>
+                        <p class="nc">Explore Sikkim's Monasteries</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#virtual-tours">Virtual Tours</a></li>
+                        <li><a href="#monasteries">Monasteries</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="images/read-panda-3840674_1280.jpg" alt="Sikkim Monastery">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="images/rohidas-mandir-6988556_1280.jpg" alt="Himalayan Mountains">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="images/WhatsApp Image 2025-09-16 at 00.54.42.jpeg" alt="Tsomgo Lake">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <h2>Discover the Spiritual Heart of Sikkim</h2>
+                <p>Experience ancient monasteries, breathtaking landscapes, and rich Buddhist culture through our immersive virtual tours and guided packages.</p>
+                <div class="hero-buttons">
+                    <a href="#virtual-tours" class="btn btn-primary">Start Virtual 360° Tour</a>
+                    <a href="#packages" class="btn btn-secondary">Reserve Your Trip</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="quick-pricing">
+        <div class="container">
+            <h2>Quick Tour Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>1-Day Quick Tour</h3>
+                    <div class="price">from ₹2,000<span>/person</span></div>
+                    <p>Gangtok local + Tsomgo Lake</p>
+                </div>
+                <div class="price-card">
+                    <h3>3-Day Scenic Trip</h3>
+                    <div class="price">from ₹6,000<span>/person</span></div>
+                    <p>Gangtok + Tsomgo + Pelling/Ravangla</p>
+                </div>
+                <div class="price-card">
+                    <h3>5-Day Explorer Trip</h3>
+                    <div class="price">from ₹12,000<span>/person</span></div>
+                    <p>Complete cultural experience</p>
+                </div>
+                <div class="price-card">
+                    <h3>7-Day Adventure Trip</h3>
+                    <div class="price">from ₹20,000<span>/person</span></div>
+                    <p>Full North Sikkim expedition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="virtual-tours" class="virtual-tour">
+        <div class="container">
+            <h2>Virtual 360° Monastery Experience</h2>
+            <p>Immerse yourself in the sacred atmosphere of Sikkim's monasteries</p>
+            
+            <!-- <div class="tour-viewer">
+                <div id="panorama-viewer" class="panorama-container">
+                    <div class="tour-controls">
+                        <button class="control-btn" id="auto-rotate">
+                            <i class="fas fa-sync-alt"></i>
+                            Auto Rotate
+                        </button>
+                        <button class="control-btn" id="zoom-in">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <button class="control-btn" id="zoom-out">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                        <button class="control-btn" id="fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+
+                    <div class="language-selector">
+                        <select id="narration-language">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                            <option value="ne">Nepali</option>
+                            <option value="bo">Tibetan</option>
+                        </select>
+                    </div>
+                </div>
+            </div> -->
+
+            <div style="text-align: center; margin: 20px 0;">
+                <iframe width="1200" height="700" src="https://www.airpano.com/embed.php?3D=andaman_islands" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0" allowfullscreen style="max-width: 100%; height: 700;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sacred Monasteries Showcase -->
+    <section id="monasteries" class="monasteries-showcase">
+        <div class="container">
+            <h2>Sacred Monasteries of Sikkim</h2>
+            <p>Discover the spiritual heart of the Himalayas through these ancient centers of Buddhist learning</p>
+            
+            <div class="monasteries-grid">
+                <div class="monastery-card featured">
+                    <div class="monastery-image">
+                        <img src="images/premium_photo-1697730418140-064a5b6c2e17.avif" alt="Rumtek Monastery">
+                        <div class="monastery-badge">Most Sacred</div>
+                        <div class="monastery-overlay">
+                            <div class="monastery-info">
+                                <h3>Rumtek Monastery</h3>
+                                <p class="monastery-subtitle">Seat of Karma Kagyu Lineage</p>
+                                <p class="monastery-description">The most significant monastery in Sikkim, serving as the main seat of the Karma Kagyu lineage. Built in the 1960s, it houses precious religious artifacts and offers breathtaking views of the surrounding hills.</p>
+                                <div class="monastery-features">
+                                    <span class="feature"><i class="fas fa-calendar"></i> Founded: 1966</span>
+                                    <span class="feature"><i class="fas fa-users"></i> 300+ Monks</span>
+                                    <span class="feature"><i class="fas fa-mountain"></i> 5,800 ft</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="images/monasteries/pemayangtse-monastery.jpg" alt="Pemayangtse Monastery">
+                        <div class="monastery-overlay">
+                            <div class="monastery-info">
+                                <h3>Pemayangtse Monastery</h3>
+                                <p class="monastery-subtitle">Perfect Sublime Lotus</p>
+                                <p class="monastery-description">One of the oldest and most important Nyingma monasteries in Sikkim, known for its stunning architecture and spiritual significance.</p>
+                                <div class="monastery-features">
+                                    <span class="feature"><i class="fas fa-calendar"></i> Founded: 1705</span>
+                                    <span class="feature"><i class="fas fa-mountain"></i> 7,000 ft</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="images/photo-1633323773493-1e1e04780167.avif" alt="Enchey Monastery">
+                        <div class="monastery-overlay">
+                            <div class="monastery-info">
+                                <h3>Enchey Monastery</h3>
+                                <p class="monastery-subtitle">Solitary Temple</p>
+                                <p class="monastery-description">A 200-year-old monastery built on a site blessed by Lama Drupthob Karpo, offering panoramic views of Gangtok valley.</p>
+                                <div class="monastery-features">
+                                    <span class="feature"><i class="fas fa-calendar"></i> Founded: 1840</span>
+                                    <span class="feature"><i class="fas fa-mountain"></i> 6,200 ft</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="images/gallery/monastery-interior.jpg" alt="Tashiding Monastery">
+                        <div class="monastery-overlay">
+                            <div class="monastery-info">
+                                <h3>Tashiding Monastery</h3>
+                                <p class="monastery-subtitle">Most Sacred in Sikkim</p>
+                                <p class="monastery-description">Considered the holiest monastery in Sikkim, situated on a heart-shaped hill between two sacred rivers.</p>
+                                <div class="monastery-features">
+                                    <span class="feature"><i class="fas fa-calendar"></i> Founded: 1717</span>
+                                    <span class="feature"><i class="fas fa-mountain"></i> 4,200 ft</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Prayer Flags Section -->
+            <div class="prayer-flags-section">
+                <div class="prayer-flags-content">
+                    <div class="prayer-flags-image">
+                        <img src="images/gallery/prayer-flags.jpg" alt="Tibetan Prayer Flags">
+                    </div>
+                    <div class="prayer-flags-text">
+                        <h3>Sacred Prayer Flags</h3>
+                        <p>The colorful prayer flags you see throughout Sikkim carry mantras and prayers that are believed to be carried by the wind to bring peace, wisdom, and good fortune to all beings.</p>
+                        <div class="flag-colors">
+                            <div class="flag-color">
+                                <div class="color-box blue"></div>
+                                <span>Blue - Sky & Space</span>
+                            </div>
+                            <div class="flag-color">
+                                <div class="color-box white"></div>
+                                <span>White - Air & Wind</span>
+                            </div>
+                            <div class="flag-color">
+                                <div class="color-box red"></div>
+                                <span>Red - Fire</span>
+                            </div>
+                            <div class="flag-color">
+                                <div class="color-box green"></div>
+                                <span>Green - Water</span>
+                            </div>
+                            <div class="flag-color">
+                                <div class="color-box yellow"></div>
+                                <span>Yellow - Earth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Our Tour Packages</h2>
+            <p>Choose from our carefully crafted tours designed to showcase the best of Sikkim</p>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="images/packages/1-day-tour.jpg" alt="Gangtok Tour">
+                        <div class="package-duration">1 Day</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Gangtok Local + Tsomgo Lake</h3>
+                        <div class="package-price">₹2,000 <span>per person</span></div>
+                        <div class="package-highlights">
+                            <h4>Highlights:</h4>
+                            <ul>
+                                <li>MG Marg exploration</li>
+                                <li>Tsomgo Lake visit</li>
+                                <li>Baba Harbhajan Singh Mandir</li>
+                                <li>Local monastery visit</li>
+                            </ul>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4>Itinerary:</h4>
+                            <p>Early morning departure to Tsomgo Lake, visit Baba Mandir, return via Gangtok city tour covering major attractions.</p>
+                        </div>
+                        <button class="btn btn-primary reserve-btn" data-package="1-day">Reserve Now</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="images/packages/3-day-scenic.jpg" alt="3-Day Tour">
+                        <div class="package-duration">3D/2N</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Gangtok + Tsomgo + Pelling/Ravangla</h3>
+                        <div class="package-price">₹6,000 <span>per person</span></div>
+                        <div class="package-highlights">
+                            <h4>Highlights:</h4>
+                            <ul>
+                                <li>Pelling monastery complex</li>
+                                <li>Kanchenjunga viewpoint</li>
+                                <li>Ravangla Buddha Park</li>
+                                <li>Traditional cultural shows</li>
+                            </ul>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4>Itinerary:</h4>
+                            <p>Day 1: Gangtok arrival, local sightseeing. Day 2: Tsomgo Lake, transfer to Pelling. Day 3: Pelling monasteries, departure.</p>
+                        </div>
+                        <button class="btn btn-primary reserve-btn" data-package="3-day">Reserve Now</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="images/packages/5-day-explorer.jpg" alt="5-Day Tour">
+                        <div class="package-duration">5D/4N</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Gangtok + Pelling + Ravangla + Namchi</h3>
+                        <div class="package-price">₹12,000 <span>per person</span></div>
+                        <div class="package-highlights">
+                            <h4>Highlights:</h4>
+                            <ul>
+                                <li>Complete monastery circuit</li>
+                                <li>Char Dham complex visit</li>
+                                <li>Tea garden tours</li>
+                                <li>Cultural immersion experiences</li>
+                            </ul>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4>Itinerary:</h4>
+                            <p>Comprehensive tour covering all major monasteries, cultural sites, and natural attractions across South and West Sikkim.</p>
+                        </div>
+                        <button class="btn btn-primary reserve-btn" data-package="5-day">Reserve Now</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="images/photo-1628837234647-b35db4740c85.avif" alt="7-Day North Sikkim">
+                        <div class="package-duration">7D/6N</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Full North Sikkim Adventure</h3>
+                        <div class="package-price">₹20,000 <span>per person</span></div>
+                        <div class="package-highlights">
+                            <h4>Highlights:</h4>
+                            <ul>
+                                <li>Lachung & Lachen valleys</li>
+                                <li>Yumthang Valley of Flowers</li>
+                                <li>Gurudongmar Lake (17,800 ft)</li>
+                                <li>Zero Point adventure</li>
+                            </ul>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4>Itinerary:</h4>
+                            <p>Ultimate North Sikkim expedition including high-altitude lakes, ancient monasteries, and pristine Himalayan landscapes.</p>
+                        </div>
+                        <button class="btn btn-primary reserve-btn" data-package="7-day">Reserve Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-reach">
+        <div class="container">
+            <h2>How to Reach Sikkim</h2>
+            <div class="reach-grid">
+                <div class="reach-card">
+                    <div class="reach-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>By Air</h3>
+                    <p><strong>Bagdogra Airport (IXB):</strong> 124 km from Gangtok</p>
+                    <p><strong>Pakyong Airport (PYG):</strong> 33 km from Gangtok</p>
+                    <p>Regular flights from Delhi, Kolkata, Mumbai</p>
+                </div>
+                
+                <div class="reach-card">
+                    <div class="reach-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>By Rail/Road</h3>
+                    <p><strong>New Jalpaiguri (NJP):</strong> 148 km from Gangtok</p>
+                    <p><strong>Siliguri:</strong> 114 km from Gangtok</p>
+                    <p>Well connected by road with regular bus services</p>
+                </div>
+                
+                <div class="reach-card">
+                    <div class="reach-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Permits Required</h3>
+                    <p><strong>Nathula Pass:</strong> Special permit needed</p>
+                    <p><strong>Gurudongmar Lake:</strong> Protected area permit</p>
+                    <p>Foreign tourists need special permits</p>
+                </div>
+                
+                <div class="reach-card">
+                    <div class="reach-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Best Time to Visit</h3>
+                    <p><strong>March - June:</strong> Pleasant weather</p>
+                    <p><strong>September - November:</strong> Clear mountain views</p>
+                    <p>Avoid monsoons (July-August)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Explore Our Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card" data-destination="gangtok">
+                    <div class="destination-image">
+                        <img src="images/destinations/gangtok-market.jpg" alt="Gangtok">
+                        <div class="destination-overlay">
+                            <h3>Gangtok</h3>
+                            <p>Capital city with monasteries and vibrant culture</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-destination="tsomgo">
+                    <div class="destination-image">
+                        <img src="images/Tsomgo-Lake.webp" alt="Tsomgo Lake">
+                        <div class="destination-overlay">
+                            <h3>Tsomgo Lake & Baba Mandir</h3>
+                            <p>Sacred glacial lake at 12,400 ft altitude</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-destination="pelling">
+                    <div class="destination-image">
+                        <img src="images/photo-1573398643956-2b9e6ade3456.avif" alt="Pelling">
+                        <div class="destination-overlay">
+                            <h3>Pelling</h3>
+                            <p>Stunning Kanchenjunga views and ancient monasteries</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-destination="north-sikkim">
+                    <div class="destination-image">
+                        <img src="images/photo-1633323773493-71920ed75215.avif" alt="North Sikkim">
+                        <div class="destination-overlay">
+                            <h3>North Sikkim</h3>
+                            <p>Lachen, Lachung, Yumthang, Gurudongmar</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-destination="ravangla">
+                    <div class="destination-image">
+                        <img src="images/WhatsApp Image 2025-09-17 at 00.14.13.jpeg" alt="Ravangla">
+                        <div class="destination-overlay">
+                            <h3>Ravangla</h3>
+                            <p>Buddha Park and serene mountain town</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-destination="varsey">
+                    <div class="destination-image">
+                        <img src="images/photo-1615966192539-f1731963b19a.avif" alt="Varsey Sanctuary">
+                        <div class="destination-overlay">
+                            <h3>Varsey Rhododendron Sanctuary</h3>
+                            <p>Pristine forest with diverse flora and fauna</p>
+                            <button class="btn btn-outline">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <h2>Reserve Your Trip</h2>
+                <p>Book your unforgettable journey to Sikkim's spiritual heart</p>
+                
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Preferred Package *</label>
+                            <select id="package" name="package" required>
+                                <option value="">Select Package</option>
+                                <option value="1-day">1-Day Quick Tour (₹2,000)</option>
+                                <option value="3-day">3-Day Scenic Trip (₹6,000)</option>
+                                <option value="5-day">5-Day Explorer Trip (₹12,000)</option>
+                                <option value="7-day">7-Day Adventure Trip (₹20,000)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travel-date">Date of Travel *</label>
+                            <input type="date" id="travel-date" name="travel-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <input type="number" id="travelers" name="travelers" min="1" value="1">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requirements, dietary preferences, or accessibility needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Submit Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact & Support</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p><a href="tel:7984224248">7984224248</a></p>
+                    <span>24×7 Available</span>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p><a href="mailto:tanishbedia123@gmail.com">tanishbedia123@gmail.com</a></p>
+                    <span>Response within 24 hours</span>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Government Support</h3>
+                    <p>24×7 by Sikkim Government</p>
+                    <span>Tourism Department</span>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <p>Tourism and Civil Aviation Department</p>
+                    <p>Paryatan Bhawan, Tadong, Metro</p>
+                    <p>Gangtok, Sikkim - 737102</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency">
+        <div class="container">
+            <h2>Emergency Numbers</h2>
+            <p>Sikkim Tourism Officials - Available 24/7</p>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <h4>Tourism Director</h4>
+                    <p>Mr. Jay Kalathiya</p>
+                    <p>Area: State Tourism</p>
+                    <a href="tel:+91 6353534038" class="emergency-number">
+                        <i class="fas fa-phone"></i> +91 6353534038
+                    </a>
+                </div>
+                
+                <div class="emergency-card">
+                    <h4>Tourist Helpline</h4>
+                    <p>Mr. Kaushal Sanavada</p>
+                    <p>Area: Tourist Assistance</p>
+                    <a href="tel:+919099230315" class="emergency-number">
+                        <i class="fas fa-phone"></i> +91 9099230315
+                    </a>
+                </div>
+                
+                <div class="emergency-card">
+                    <h4>North Sikkim Coordinator</h4>
+                    <p>Ms. Hetvi kalkani</p>
+                    <p>Area: North Sikkim Tours</p>
+                    <a href="tel:+919574277647" class="emergency-number">
+                        <i class="fas fa-phone"></i> +91 9574277647
+                    </a>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Emergency Services</h3>
+                    <p>Police/Medical/Fire</p>
+                    <p>Area: State Emergency</p>
+                    <a href="tel:112" class="emergency-number">
+                        <i class="fas fa-phone"></i> 112
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Cultural Events Calendar</h2>
+            <p>Experience Sikkim's vibrant festivals and cultural celebrations</p>
+            
+            <div class="calendar-container">
+                <div class="calendar-controls">
+                    <button class="calendar-btn prev-month">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="current-month">March 2025</h3>
+                    <button class="calendar-btn next-month">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="events-list">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Mar</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Losar (Tibetan New Year)</h4>
+                            <p class="event-time">10:00 AM - 6:00 PM</p>
+                            <p class="event-location">Rumtek Monastery</p>
+                            <p>Traditional Tibetan New Year celebrations with masked dances and ceremonies.</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-sm btn-outline">Set Reminder</button>
+                            <button class="btn btn-sm btn-primary">Book Tickets</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">28</span>
+                            <span class="month">Mar</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Holi Festival</h4>
+                            <p class="event-time">9:00 AM - 5:00 PM</p>
+                            <p class="event-location">MG Marg, Gangtok</p>
+                            <p>Festival of colors celebrated with enthusiasm across Sikkim.</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-sm btn-outline">Set Reminder</button>
+                            <button class="btn btn-sm btn-primary">Book Tickets</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Apr</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Saga Dawa Festival</h4>
+                            <p class="event-time">6:00 AM - 8:00 PM</p>
+                            <p class="event-location">Various Monasteries</p>
+                            <p>Sacred Buddhist festival commemorating Buddha's enlightenment.</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-sm btn-outline">Set Reminder</button>
+                            <button class="btn btn-sm btn-primary">Book Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Discover the beauty of Sikkim through our curated collection</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="monasteries">Monasteries</button>
+                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                </div>
+            
+            <div class="video-gallery">
+                <h3>Cultural Videos</h3>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <video controls poster="images/video-thumb1.jpg">
+                            <source src="images/Sikkim dance at North-east Festival of DGC in Delhi.mp4" type="video/mp4">
+                            Traditional Sikkim Dance
+                        </video>
+                        <h4>Traditional Sikkim Dance</h4>
+                    </div>
+                    
+                    <div class="video-card">
+                        <video controls poster="images/video-thumb2.jpg">
+                            <source src="images/Most Beautiful Villages of Sikkim ｜ Lachung and Lachen ｜ Gurudongmar Lake ｜ Northeast India.mp4" type="video/mp4">
+                            Sacred Monastery Chants
+                        </video>
+                        <h4>Sacred Monastery Chants</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="officials-grid">
+                <div class="official-card">
+                    <div class="official-image">
+                        <img src="images/governor.jpg" alt="Governor of Sikkim">
+                    </div>
+                    <div class="official-details">
+                        <h3>Shri Om Prakash Mathur</h3>
+                        <p class="position">Governor of Sikkim</p>
+                        <p>Leading Sikkim towards sustainable tourism development while preserving its rich cultural heritage and natural beauty.</p>
+                    </div>
+                </div>
+                
+                <div class="official-card">
+                    <div class="official-image">
+                        <img src="images/hcm.jpg" alt="Chief Minister of Sikkim">
+                    </div>
+                    <div class="official-details">
+                        <h3>Shri Prem Singh Tamang</h3>
+                        <p class="position">Chief Minister of Sikkim</p>
+                        <p>Promoting eco-friendly tourism initiatives and ensuring the prosperity of local communities through responsible travel.</p>
+                    </div>
+                </div>
+                
+                <div class="official-card">
+                    <div class="official-image">
+                        <img src="images/Secretary.jpg" alt="Chief Secretary of Sikkim">
+                    </div>
+                    <div class="official-details">
+                        <h3>Shri Ravindra Telang</h3>
+                        <p class="position">Chief Secretary</p>
+                        <p>Overseeing administrative excellence in tourism services and infrastructure development across the state.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback-content">
+                <h2>Share Your Feedback</h2>
+                <p>Help us improve your experience</p>
+                
+                <form class="feedback-form" id="feedbackForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="feedback-name">Name</label>
+                            <input type="text" id="feedback-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback-email">Email</label>
+                            <input type="email" id="feedback-email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Rate Your Experience</label>
+                        <div class="star-rating" id="star-rating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedback-message">Your Feedback</label>
+                        <textarea id="feedback-message" name="message" rows="5" placeholder="Share your thoughts, suggestions, or review..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="chat-toggle" id="chat-toggle">
+            <div class="assistant-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <span class="chat-label">Ask AI Assistant</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Sikkim Tourism AI Assistant</h4>
+                <button class="chat-close" id="chat-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your Sikkim tourism assistant. I can help you with:</p>
+                        <ul>
+                            <li>Tourism permits and requirements</li>
+                            <li>Weather and best travel times</li>
+                            <li>Route suggestions and directions</li>
+                            <li>Package recommendations</li>
+                            <li>Cultural events and festivals</li>
+                        </ul>
+                        <p>What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Ask me anything about Sikkim tourism...">
+                <button id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Seal_of_Sikkim.svg.png" alt="Government of Sikkim">
+                        <h3>Monastery360</h3>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#packages">Tour Packages</a></li>
+                        <li><a href="#virtual-tours">Virtual Tours</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="tel:7984224248">Emergency: 7984224248</a></li>
+                        <li><a href="mailto:tanishbedia123@gmail.com">Email Support</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/groups/visitsikkim/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/tourismsikkim?lang=en" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sikkim.tourism/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@KanishkGupta" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Department of Information and Technology, Government of Sikkim. All rights reserved.</p>
+                <p>Developed By Frontend Force</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search monasteries, destinations, packages...">
+            <button class="search-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="search-results" id="search-results">
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/360-tour.js"></script>
+    <script src="js/ai-assistant.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+</html>
